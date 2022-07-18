@@ -12,78 +12,102 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Personal information</legend>
         <label class="form-field">
           Surname:
-          <input type="text" 
+          <input 
+            type="text" 
             name="Surname" 
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
         <label class="form-field">
           Name:
-          <input type="text" 
+          <input 
+            type="text" 
             name="Name" 
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
         <label class="form-field">
           How old are You?
-          <input type="number" 
+          <input 
+            type="number" 
             name="number" 
             min="1" max="100" 
-            value="12">
+            value="12"
+          >
         </label>
         <label class="form-field">
           Full date of birth:
-          <input type="date" 
+          <input 
+            type="date" 
             name="start" 
-            id="trip-start">
+            id="trip-start"
+          >
         </label>
         <label>
           I accept the term of the agreement
-          <input type="checkbox" 
-            name="checkbox">
+          <input 
+            type="checkbox" 
+            name="checkbox"
+          >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
-          <input type="email" 
+          <input 
+            type="email" 
             name="E-mail" 
             placeholder="email@example.com" 
             required 
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
         <label>
           Password:
-          <input type="password" 
+          <input 
+            type="password" 
             name="Password" 
             required 
-            autocomplete="off">
+            autocomplete="off"
+          >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
         <label class="form-field">
           Do you love cats?
-          <input type="radio" 
-            name="yes">
-            Yes
-          <input type="radio" 
-            name="no">
-            No
+          <input 
+            type="radio" 
+            name="radio" 
+            value="yes"
+          >
+          <label for="radio">yes</label>
+          <input 
+            type="radio" 
+            name="radio" 
+            value="no"
+          >
+          <label for="radio">no</label>
         </label>
         <label class="form-field">
           What is your favorite color?
-          <input type="color" 
-            name="color">
+          <input 
+            type="color" 
+            name="color"
+          >
         </label>
         <label class="form-field">
           What time do you go to bed?
-          <input type="time" 
+          <input 
+            type="time" 
             id="appt" 
-            name="appt">
+            name="appt"
+          >
         </label>
         <label class="form-field">
           What are your favorite brand of cars?
@@ -95,22 +119,31 @@
         </label>
         <label>
           How do you rate our work?
-          <input type="range" 
+          <input 
+          type="range" 
           name="range" 
           minlength="0" 
           maxlength="11" 
-          value="0">
+          value="0"
+        >
         </label>
       </fieldset>
-      <fieldset>
-        <legend>Additional info</legend>
+      <fieldset class="fieldset">
+        <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
-          <textarea name="comments" autocomplete="off"></textarea>
+          <textarea 
+            name="comments" 
+            autocomplete="off">
+          </textarea
+          >
         </label>
         <label>
           Would you recommend us?
-          <select name="recommend" size="1">
+          <select 
+            name="recommend" 
+            size="1"
+          >
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>

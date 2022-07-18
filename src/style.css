@@ -3,7 +3,6 @@
   margin-bottom: 10px;
 }
 
-fieldset {
+.fieldset {
   margin-bottom: 20px;
-  border: 1px solid black;
 }
